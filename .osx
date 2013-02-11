@@ -25,7 +25,7 @@ defaults write NSGlobalDomain AppleScrollerPagingBehavior -bool true
 defaults write NSGlobalDomain NSScrollViewRubberbanding -int 0
 
 # Enable subpixel font rendering on non-Apple LCDs
-defaults write NSGlobalDomain AppleFontSmoothing -int 2
+defaults write NSGlobalDomain AppleFontSmoothing -int 1
 
 ######################################
 # Finder/UI
@@ -146,6 +146,9 @@ defaults write com.apple.dock workspaces -bool true
 defaults write com.apple.dock workspaces-rows -int 1
 defaults write com.apple.dock workspaces-cols -int 2
 
+# Shortcuts for Expose
+
+
 ######################################
 # Hot Corners
 ######################################
@@ -219,6 +222,9 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 0
 
+# Shortcuts
+#defaults write NSGlobalDomain NSUserKeyEquivalents -dict-add "Zoom" "\@$m" # Doesn't seem to work
+
 ######################################
 # Sound
 ######################################
@@ -232,10 +238,10 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 # Sharing
 ######################################
 # Set computer name
-sudo scutil --set ComputerName "MacBook Bro"
-sudo scutil --set HostName "MacBook Bro"
-sudo scutil --set LocalHostName "MacBook-Bro"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MacBook-Bro"
+sudo scutil --set ComputerName "Brian Littmann"
+sudo scutil --set HostName "Brian Littmann"
+sudo scutil --set LocalHostName "Brian-Littmann"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Brian-Littmann"
 
 ######################################
 # Screenshots
